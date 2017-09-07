@@ -1,0 +1,198 @@
+
+nav{
+  margin-top:10px;
+  background: #fff;
+}
+nav ul{
+  width: 100%;
+  padding-top: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+nav ul li{
+  width: 25%;
+  height: 71px;
+  text-align: center;
+  padding-bottom: 16px;
+}
+nav ul li img{
+  width: 52px;
+  height: 52px;
+  margin: 0 auto;
+}
+nav ul li .icon01{
+  background: url("../images/ic_search.png") no-repeat;
+  background-size: contain;
+  display:inline-block;
+}
+nav ul li .icon02{
+  background: url("../images/ic_cu.png") no-repeat;
+  background-size: contain;
+  display:inline-block;
+}
+nav ul li .icon03{
+  background: url("../images/ic_coudanpin.png") no-repeat;
+  background-size: contain;
+  display:inline-block;
+}
+nav ul li .icon04{
+  background: url("../images/ic_bcj.png") no-repeat;
+  background-size: contain;
+  display:inline-block;
+}
+nav ul li .icon05{
+  background: url("../images/haitao.png") no-repeat;
+  background-size: contain;
+  display:inline-block;
+}
+nav ul li .icon06{
+  background: url("../images/ic_temai.png") no-repeat;
+  background-size: contain;
+  display:inline-block;
+}
+nav ul li .icon07{
+  background: url("../images/ic_trend.png") no-repeat;
+  background-size: contain;
+  display:inline-block;
+}
+nav ul li .icon08{
+  background: url("../images/gengduo.png") no-repeat;
+  background-size: contain;
+  display:inline-block;
+}
+nav ul li .icon09{
+  background: url("../images/ic_coudanpin.png") no-repeat;
+  background-size: contain;
+  display:inline-block;
+}
+nav ul li .icon10{
+  background: url("../images/ic_kb.png") no-repeat;
+  background-size: contain;
+  display:inline-block;
+}
+nav ul li .icon11{
+  background: url("../images/ic_mall.png") no-repeat;
+  background-size: contain;
+  display:inline-block;
+}
+nav ul li .icon12{
+  background: url("../images/ic_pp.png") no-repeat;
+  background-size: contain;
+  display:inline-block;
+}
+.smartSell{
+  width: 100%;
+  margin-top:6px;
+}
+.smartHd{
+  width: 100%;
+  height:35px;
+  padding:0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: linear-gradient(to bottom,#ffad3f,#ff9307)
+}
+.smartHd h3{
+  line-height:35px;
+  color: #fff;
+  font-size: 16px;
+}
+.smartHd .more{
+  width: 20px;
+  height: 20px;
+  background: url("../images/more.png") no-repeat right center;
+  background-size: contain;
+  display: inline-block;
+  margin-top: 7px;
+}
+.smartSell .main{
+  background-color: #fff;
+}
+.smartSell .main .item{
+  width: 100%;
+  padding:15px 0;
+  border-bottom: 1px solid #ccc;
+}
+.smartSell .main .item a{
+  width: 100%;
+  pading:0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.smartSell .main .item .pic-left{
+  width: 35%;
+  
+}
+.smartSell .main .item .pic-left img{
+  width: 100%;
+  height: 129px;
+
+}
+.smartSell .main .item .text-right{
+  width: 60%;
+}
+.smartSell .main .item .text-right .tit{
+  font-size: 16px;
+  color: #000000;
+}
+.smartSell .main .item .text-right .price{
+  color: #ff6f11;
+  font-size: 15px;
+}
+.smartSell .main .item .text-right p.last-arc{
+  margin-top:35px;
+  color: #999999;
+}
+.more{
+  width: 95%;
+  height: 30px;
+  margin:0 auto;
+  border-radius: 3px;
+  border:1px solid #ccc;
+  margin-top: 8px;
+  text-align: center;
+  line-height:30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.smart-ad{
+  margin-top: 8px;
+}
+.footerBtn{
+  width: 100%;
+  height: 30px;
+  line-height:30px;
+  margin-top: 26px;
+  display: flex;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.footerBtn>div{
+  flex:1;
+  text-align: center;
+}
+.footerBtn .registration{
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+
+}
+.footerBtn .goBack .icon-top{
+  width: 14px;
+  height: 15px;
+  background: url("../images/top.jpg") no-repeat;
+  -webkit-background-size:contain;
+  background-size:contain;
+  display: inline-block;
+
+}
+.copyright{
+  margin-top: 17px;
+  text-align: center;
+}
+.hide{
+  display: none;
+}

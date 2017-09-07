@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>省钱控</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/moneyctrl.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <header>
+        <i class="arrow" onclick="history.back()"></i>
+        <h2>省钱控-最新优惠</h2>
+        <div class="downLoad"></div>
+    </header>
+    <div class="prolist">
+        <ul>
+            <script type="text/template" id="tpl">
+            {{ each result}}
+            <li>
+                <a href="moneyproduct.html?productid={{$value.productId}}">
+                <div class="arc">
+                    <p class="bigtit">{{ $value.productName}}</p>
+                    <div class="clearfix formbuy">
+                        <p class="fl">
+                            <span>{{$value.productFrom}}</span>
+                            <span>{{$value.productTime}}</span>
+                        </p>
+                        <p class="fr"><i class="smalIcon"></i>{{$value.productComCount}}</p>
+                    </div>
+                </div>
+                {{#$value.productImgSm}}
+                </a>
+            </li>
+            {{ /each}}
+            </script>
+        </ul>
+    </div>
+    <section class="page">
+        <div class="father clearfix">
+            <div class="prev fl w33"><a href="javascript:;">上一页</a></div>
+            <div class="w33 fl"><select class="sel" name="" data-index>
+                <option value="1">1/3</option>
+                <option value="2">2/3</option>
+                <option value="3">3/3</option>
+            </select></div>
+            <div class="next fl w33"><a href="javascript:;">下一页</a></div>
+        </div>
+    </section>
+    <section class="footerBtn">
+        <div class="login fl">登录</div>
+        <div class="registration fl">注册</div>
+        <div class="goBack fl"><i class="icon-top"></i>返回顶部</div>
+    </section>
+    <section class="copyright">
+        <p>
+            <span class="red">手机app下载</span>
+            <span>慢慢买手机版</span>
+            <span class="c9">--掌上比价</span>
+        </p>
+        <p class="c9">m.mmbuy.com</p>
+    </section>
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/template.js"></script>
+    <script src="js/globle.js"></script>
+<script src="js/moneyctrl.js"></script>
+</body>
+</html>

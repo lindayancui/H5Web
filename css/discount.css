@@ -1,0 +1,205 @@
+body{
+  background: #fff;
+}
+header{
+  width: 100%;
+  height: 50px;
+  background: #ff841d;
+  line-height:44px;
+  text-align: center;
+  position: relative;
+}
+header h2{
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  color: #fff;
+}
+.downLoad{
+  width: 36px;
+  height: 36px;
+  background: url("../images/header_app.png") no-repeat right center;
+  -webkit-background-size:contain;
+  background-size:contain;
+  padding-top:12px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+header .arrow{
+  width: 26px;
+  height: 28px;
+  background: url(../images/icback.svg) no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  left: 10px;
+  top: 12px;
+}
+ .bigtitle{
+  font-size: 22px;
+  color: #000;
+  text-align: left;
+   padding: 10px 10px 0 10px;
+}
+ .content{
+  text-align: left;
+  color: #999999;
+  padding:10px;
+}
+ .content>span{
+  padding:0 4px;
+}
+ .texCont{
+  width: 100%;
+  padding:0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.texCont img{
+  width: 160px;
+  height: 160px;
+  float: right;
+}
+ .texCont p{
+  text-align: left;
+  font-size: 14px;
+  color: #9999;
+}
+ .texCont .smpic{
+  float: left;
+  width: 100px;
+  height: 150px;
+  float: right;
+}
+.bigPictit{
+  width: 100%;
+  padding:0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.bigPictit .arceml{
+  text-align: left;
+  font-size: 18px;
+  padding-top: 20px;
+}
+.bigPictit img{
+  width: 100%;
+  margin:20px auto;
+}
+.price{
+  color: #ff841d;
+  font-size: 20px;
+  padding-left: 12px;
+}
+.main .goBuy{
+  display: block;
+  width: 90%;
+  height: 32px;
+  background: #ff9000;
+  margin:0 auto;
+  line-height: 32px;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.comment{
+  width: 100%;
+  padding:0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+.comment .tit{
+  font-size: 16px;
+  text-align: left;
+  color: #000;
+  height: 30px;
+  line-height:30px;
+  padding-top: 10px;
+}
+.comment .form textarea{
+  width: 100%;
+  border: 1px solid #ccc;
+  resize:none;
+  border-radius: 3px;
+  height: 171px;
+}
+.comment .ctrl{
+  position: relative;
+  width: 100%;
+  height:39px;
+  background: #fbfbfb;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  margin-top: -6px;
+  border-top: 1px solid #ccc;
+
+}
+.comment .myComment .reply .form .ctrl .tjdp{
+  background: #ff841d;
+  text-align: center;
+  line-height:39px;
+  width: 100px;
+  height: 39px;
+  display: block;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top:0;
+}
+.list{
+  margin-top: 10px;
+}
+.list .newHit{
+  font-size: 16px;
+  color: #000;
+  text-align: left;
+  height: 30px;
+  line-height:30px;
+}
+.myComment{
+  width: 100%;
+}
+.myComment img{
+  width: 40px;
+  height: 40px;
+  float: left;
+  border-radius: 50%;
+}
+.myComment ui-border-b .con{
+  float: left;
+  padding-left: 10px;
+}
+.myComment .ui-border-b .name {
+  float: left;
+  padding-left: 10px;
+}
+.myComment .con{
+  overflow: hidden;
+}
+.myComment .ui-border-b .username{
+  color: #5aa3d5;
+
+}
+.myComment .list{
+  width: 100%;
+  position: relative;
+}
+.myComment .list .ui-border-b{
+  padding-bottom: 10px;
+  position: relative;
+}
+.myComment .ui-border-b .content{
+  color: #999;
+  float: right;
+}
+.myComment .ui-border-b .time{
+  color: #999999;
+}

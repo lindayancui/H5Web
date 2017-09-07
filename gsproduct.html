@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>凑单品</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/gsproduct.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,
+     maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+<header>
+    <i class="arrow" onclick="history.back()"></i>
+    <h2>凑单品</h2>
+    <div class="downLoad"></div>
+</header>
+<div class="mainList">
+    <div class="hd">
+        <div class="filter">
+            <ul class="hd_list">
+                <li class="ls01"><a href="#">京东<i></i></a></li>
+                <li class="ls02"><a href="#">华北<i></i></a></li>
+                <li class="ls03"><a href="#">全部价格<i></i></a></li>
+
+            </ul>
+        </div>
+        <div class="searchIcon"><i></i></div>
+        <!--各种下拉-->
+        <div class="popsort p_sel">
+            <ul>
+                <script type="text/html" id="tpl">
+                    {{ each result}}
+                    <li data-shopid={{$value.shopId}}><a href="#">{{$value.shopName}}</a></li>
+                    {{ /each}}
+                </script>
+            </ul>
+        </div>
+        <!--地区-->
+        <div class="popsort2 p_sel">
+            <ul>
+                <script type="text/html" id="tpl2">
+                    {{ each result}}
+                    <li data-areaid={{$value.areaId}}><a  href="#">{{$value.areaName}}</a></li>
+                    {{ /each}}
+                </script>
+            </ul>
+        </div>
+        <!--全部价格-->
+        <div class="popsort3 p_sel">
+            <ul>
+                <li><a href="#">￥8999</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="product">
+        <ul>
+            <script type="text/html" id="tplPr">
+                {{ each result}}
+                    <li>
+                        <a class="lia" href="#">
+                            <img class="p_pic" src="{{#$value.productImg}}" alt="">
+                            <p class="p_p">{{$value.productName}}</p>
+                            <div class="m_t clearfix">
+                                <span class="p_price fl">{{$value.productPrice}}</span>
+                                <span class="p_btn fr" href="#">去凑单</span>
+                            </div>
+                        </a>
+                    </li>
+                {{ /each}}
+            </script>
+        </ul>
+    </div>
+</div>
+<section class="footerBtn">
+    <div class="login fl">登录</div>
+    <div class="registration fl">注册</div>
+    <div id="goBack" class="goBack fl"><i class="icon-top"></i>返回顶部</div>
+</section>
+<section class="copyright">
+    <p>
+        <span class="red">手机app下载</span>
+        <span>慢慢买手机版</span>
+        <span class="c9">--掌上比价</span>
+    </p>
+    <p class="c9">m.mmbuy.com</p>
+</section>
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/template.js"></script>
+<script src="js/globle.js"></script>
+<script src="js/gsproduct.js"></script>
+</body>
+</html>

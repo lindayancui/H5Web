@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>省钱控详情页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/moneryproduct.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+<script>
+//    $('.arrow').click(function () {
+//      location.href=moneyctrl.html
+//    })
+</script>
+<header>
+    <i class="arrow" onclick="history.back()"></i>
+    <h2>国内折扣</h2>
+    <div class="downLoad"></div>
+</header>
+<div class="main">
+    <div class="topPart">
+            <script type="text/html" id="tpl">
+                {{ each result}}
+                    <h3 class="bigtitle">{{ $value.productName}}</h3>
+                    <p class="content"><span>{{$value.productFrom}}</span><span>{{$value.productTime}}</span><span>{{$value.productTips}}</span></p>
+                    <div class="texCont clearfix">
+                       {{#$value.productImgSm}}
+                        <p>{{$value.productInfo}} </p>
+                    </div>
+                    <div class="bigPictit">
+                        <p class="arceml">{{$value.productInfo2}}</p>
+                        {{#$value.productImg2}}
+                    </div>
+                {{ /each}}
+            </script>
+        </div>
+    <div class="area">
+        <script type="text/html" id="tpl2">
+
+                {{ each result}}
+                        {{#$value.productCity}}
+                {{ /each}}
+        </script>
+    </div>
+    <a href="#" class="goBuy">前往购买</a>
+    <div class="jdsmallimg"><img src="images/mmbweixin2.png" alt=""></div>
+    <div class="comment">
+        <!--<h3>发表评论</h3>-->
+        <!--<textarea name="" id="" cols="30" rows="10"></textarea>-->
+        <!--<div class="btnBg">-->
+            <!--<a href="#">发表评论</a>-->
+        <!--</div>-->
+        <div class="newComment">
+            <!--<h3 class="newHit">最新评论</h3>-->
+            <div class="myComment">
+                <script type="text/html" id="tpl3">
+                    {{ each result}}
+                      {{#$value.productComment}}
+                    {{ /each}}
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="footerBtn">
+    <div class="login fl">登录</div>
+    <div class="registration fl">注册</div>
+    <div class="goBack fl"><i class="icon-top "></i>返回顶部</div>
+</section>
+<section class="copyright">
+    <p>
+        <span class="red">手机app下载</span>
+        <span>慢慢买手机版</span>
+        <span class="c9">--掌上比价</span>
+    </p>
+    <p class="c9">m.mmbuy.com</p>
+</section>
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/template.js"></script>
+<script src="js/globle.js"></script>
+<script src="js/moneyproduct.js"></script>
+</body>
+</html>

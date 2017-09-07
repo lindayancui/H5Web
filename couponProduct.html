@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>肯德基优惠券</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/couponProduct.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,
+     maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+<header>
+    <i class="arrow" onclick="history.back()"></i>
+    <h2>优惠券</h2>
+    <div class="downLoad"></div>
+</header>
+<div class="tip"><p>温馨提示：请就餐前提供优惠券</p></div>
+<div class="main-item">
+    <ul>
+        <script type="text/html" id="tpl">
+            {{ each result}}
+                <li data-txt={{$value.couponProductId}} class="item clearfix">
+                    <div class="pic">{{#$value.couponProductImg}}</div>
+                    <div class="item_r">
+                        <p class="tit">{{$value.couponProductName}}</p>
+                        <p class="price"></p>
+                        <p class="over">{{$value.couponProductTime}}</p>
+                    </div>
+
+                </li>
+            {{ /each}}
+        </script>
+    </ul>
+</div>
+<!--遮罩-->
+<div class="model">
+    <div class="bg"></div>
+    <div class="slider">
+        <ul class="center myLi">
+            <li><img src="1" alt=""></li>
+            <!--<li><img src="1" alt=""></li>-->
+            <!--<li><img src="1" alt=""></li>-->
+        </ul>
+        <div class="arrowBox">
+            <div class="arrowRight">&gt;</div>
+            <div class="arrowLeft center">&lt;</div>
+        </div>
+    </div>
+</div>
+<section class="footerBtn">
+    <div class="login fl">登录</div>
+    <div class="registration fl">注册</div>
+    <div class="goBack fl"><i class="icon-top "></i>返回顶部</div>
+</section>
+<section class="copyright">
+    <p>
+        <span class="red">手机app下载</span>
+        <span>慢慢买手机版</span>
+        <span class="c9">--掌上比价</span>
+    </p>
+    <p class="c9">m.mmbuy.com</p>
+</section>
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/template.js"></script>
+<script src="js/globle.js"></script>
+<script src="js/couponProduct.js"></script>
+</body>
+</html>

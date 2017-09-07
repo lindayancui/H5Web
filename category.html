@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>比价搜索</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/category.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+<header>
+    <a href="index.html">
+    <div class="logo fl">
+    </div>
+    </a>
+    <div class="downLoad fr"></div>
+</header>
+<section class="searchBox">
+    <div class="form clearfix">
+        <input type="text" placeholder="请输入您想比价的产品">
+        <a href="javascript:;" class="searchBtn fr">搜索</a>
+    </div>
+</section>
+<section class="mainInfo">
+    <ul class="ulItem" id="ulItem">
+        <script type="text/template" id="tpl">
+            {{ each result}}
+            <li id="myItem" class="clearfix myItem">
+                <a href="#" data-index ={{$value.titleId}}>
+                    <div class="tit fl"><h3>{{ $value.title}}</h3></div>
+                    <div class="arrDown fr"></div>
+                </a>
+            </li>
+            {{ /each }}
+        </script>
+    </ul>
+    <script type="text/template" id="tpl2">
+        <ul class="myList clearfix">
+        {{ each result}}
+        <li class="fl"><a href="productlist.html?categoryid={{$value.categoryId}}&pageid=1">{{ $value.category}}</a></li>
+        {{ /each}}
+        </ul>
+    </script>
+</section>
+<section class="footerBtn">
+    <div class="login fl">登录</div>
+    <div class="registration fl">注册</div>
+    <div class="goBack fl"><i class="icon-top "></i>返回顶部</div>
+</section>
+<section class="copyright">
+    <p>
+        <span class="red">手机app下载</span>
+        <span>慢慢买手机版</span>
+        <span class="c9">--掌上比价</span>
+    </p>
+    <p class="c9">m.mmbuy.com</p>
+</section>
+<section class="footerBtn">
+    <div class="login fl">登录</div>
+    <div class="registration fl">注册</div>
+    <div id="goBack" class="goBack fl"><i class="icon-top"></i>返回顶部</div>
+</section>
+<section class="copyright">
+    <p>
+        <span class="red">手机app下载</span>
+        <span>慢慢买手机版</span>
+        <span class="c9">--掌上比价</span>
+    </p>
+    <p class="c9">m.mmbuy.com</p>
+</section>
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/template.js"></script>
+<script src="js/globle.js"></script>
+<script src="js/category.js"></script>
+</body>
+</html>

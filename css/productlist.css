@@ -1,0 +1,82 @@
+.w33{
+  width: 33.33%;
+}
+
+.product ul li{
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.product ul li a{
+  width: 100%;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+}
+.product ul li a img{
+  width: 100px;
+  height: 100px;
+}
+.product ul li a .picImg{
+  width: 40%;
+}
+.product ul li a .tail{
+  width: 54%;
+  margin-top: 23px;
+}
+.product ul li a .tail .title{
+  color: #000;
+  font-size: 16px;
+  word-break: break-all;
+
+}
+.price{
+  color: #f10215;
+  font-size: 15px;
+  line-height: 30px;
+}
+.last-tit{
+  color: #999999;
+}
+.page{
+  width: 100%;
+  border:1px solid #ccc;
+}
+.page .father{
+  width: 100%;
+  padding:0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+.page .father > div{
+  width: 33.33%;
+  text-align: center;
+}
+.page a{
+  box-sizing: border-box;
+  background-color: #d4d4d4;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
+  background: -moz-linear-gradient(top, #f1f1f1, #d4d4d4);
+  background: -o-linear-gradient(top, #f1f1f1, #d4d4d4);
+  border-bottom: 1px solid #bababa;
+  box-shadow: 0 0 1px #666;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 32px;
+  overflow: hidden;
+  padding: 8px 20px;
+}
+.page .father .sel{
+  text-align: center;
+  border: 1px solid #bababa;
+  font-size: 16px;
+  padding: 8px 10px;
+}

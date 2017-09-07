@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>比价</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/bijia.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+<header>
+    <div class="logo fl">
+        <a href="index.html"></a>
+    </div>
+    <div class="downLoad fr"></div>
+</header>
+<section class="searchBox">
+    <div class="form clearfix">
+        <input type="text" placeholder="请输入您想比价的产品">
+        <a href="javascript:;" class="searchBtn fr">搜索</a>
+    </div>
+</section>
+    <div class="bread">
+        <script type="text/template" id="pl">
+            {{ each result}}
+        <p id="p_bread" class="fl"><a href="index.html">首页></a>
+            <a href="cotegory.html?categoryid={{$value.categoryId}}">{{$value.category}}></a>
+            <a id="myLi"data-txt={{$value.productId}}></a>
+        </p>
+            {{ /each}}
+        </script>
+    <button class="fr">筛选</button>
+    </div>
+<section class="title">
+    <script type="text/template" id="tpl">
+        {{ each result}}
+        <div>
+            <p id="p" data-index={{$value.productName}}>{{$value.productName}}</p>
+            {{#$value.productImg}}
+        </div>
+        {{ /each}}
+    </script>
+    <i class="sc"></i>
+</section>
+<section class="btn clearfix">
+    <span class=""><a href="#">比价搜索</a></span>
+    <span class=""><a href="#">产品参数</a></span>
+    <span class=""><a href="#">评论(2522)</a></span>
+</section>
+<section class="jd">
+    <div class="jd_head fl"><h3>京东商城</h3></div>
+    <div class="jd_head_buy">
+        <span class="bigPrice">￥9000</span>
+        <a href="#">去购买</a>
+    </div>
+</section>
+<section class="tz"><p>*请参照点诶十年函数多版本函数点诶十年函数多版本函数的</p></section>
+<section class="pl"><p>网友评论</p></section>
+<section class="pl_list" >
+    <ul>
+        <script type="text/template" id="tpl2">
+            {{ each result }}
+                <li>
+                    <div class="ht clearfix">
+                        <span class="fl name">{{$value.comName}}</span>
+                        <div class="fr">
+                            <p>{{$value.comTime}}</p>
+                            <p>{{$value.comFrom}}</p>
+                        </div>
+                    </div>
+                    <p class="arc">{{$value.comContent}}</p>
+                </li>
+            {{ /each}}
+        </script>
+    </ul>
+</section>
+<a class="getMore" href="#">查看更多评论</a>
+<section class="footerBtn">
+    <div class="login fl">登录</div>
+    <div class="registration fl">注册</div>
+    <div class="goBack fl"><i class="icon-top "></i>返回顶部</div>
+</section>
+<section class="copyright">
+    <p>
+        <span class="red">手机app下载</span>
+        <span>慢慢买手机版</span>
+        <span class="c9">--掌上比价</span>
+    </p>
+    <p class="c9">m.mmbuy.com</p>
+</section>
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/template.js"></script>
+<script src="js/globle.js"></script>
+<script src="js/bijia.js"></script>
+</body>
+</html>

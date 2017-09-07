@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>白菜价-淘宝内部券</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/baicaijia.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,
+     maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+<header>
+    <i class="arrow" onclick="history.back()"></i>
+    <h2>白菜价-淘宝内部券</h2>
+    <div class="downLoad"></div>
+</header>
+<div class="main">
+    <div class="bcj-head-cat">
+        <div class="bcj-title">
+            <div class="ul-wapper">
+                <ul>
+                    <script type="text/html" id="tpl">
+                        {{ each result}}
+                        <li><a data-txt={{$value.titleId}} href="#">{{$value.title}}</a></li>
+                        {{ /each }}
+                    </script>
+                </ul>
+            </div>
+        </div>
+        <div class="searchIcon"></div>
+    </div>
+    <div class="bcj-list">
+        <ul>
+            <script type="text/html" id="tpl2">
+                {{ each result}}
+             <li class="ui-border-tb ">
+                <a href="#">
+                    <div class="pic">{{#$value.productImg}}</div>
+                    <div class="inf">
+                        <h3>{{#$value.productName}}</h3>
+                        <p class="price">
+                            {{#$value.productPrice}}
+                        </p>
+                        <p class="bar">{{#$value.productCouponRemain}}
+                            <a href="#"></a>
+                        </p>
+                        <p class="ticket">
+                            {{#$value.productCoupon}}
+                            {{#$value.productHref}}
+                        </p>
+
+                    </div>
+                </a></li>
+                {{ /each}}
+            </script>
+        </ul>
+    </div>
+</div>
+<section class="footerBtn">
+    <div class="login fl">登录</div>
+    <div class="registration fl">注册</div>
+    <div class="goBack fl"><i class="icon-top "></i>返回顶部</div>
+</section>
+<section class="copyright">
+    <p>
+        <span class="red">手机app下载</span>
+        <span>慢慢买手机版</span>
+        <span class="c9">--掌上比价</span>
+    </p>
+    <p class="c9">m.mmbuy.com</p>
+</section>
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/template.js"></script>
+<script src="js/globle.js"></script>
+<script src="js/baicaijia.js"></script>
+</body>
+</html>

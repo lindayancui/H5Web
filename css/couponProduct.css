@@ -1,0 +1,132 @@
+body{
+  background: #fff;
+}
+header{
+  width: 100%;
+  height: 50px;
+  background: #f4483e;
+  line-height:44px;
+  text-align: center;
+  position: relative;
+}
+header h2{
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  color: #fff;
+}
+header .arrow{
+  width: 26px;
+  height: 28px;
+  background: url(../images/icback.svg) no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  left: 10px;
+  top: 12px;
+}
+.downLoad{
+  width: 36px;
+  height: 36px;
+  background: url("../images/header_app.png") no-repeat right center;
+  -webkit-background-size:contain;
+  background-size:contain;
+  padding-top:12px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+.tip{
+  height: 40px;
+  color: #999999;
+}
+.tip p{
+  text-align: center;
+  line-height:40px;
+}
+.main-item {}
+.main-item .item{
+  width: 100%;
+  padding:10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+}
+.main-item .item .pic{
+  width: 103px;
+  height:79px;
+  float: left;
+}
+.main-item .item .pic img{
+  width: 103px;
+  height:79px;
+}
+.main-item .item .item_r{
+  margin-left: 130px;
+}
+.main-item .item .item_r .tit{
+  font-size: 12px;
+}
+.main-item .item .item_r .price{
+  font-size: 16px;
+  font-family: "微软雅黑", "Microsoft YaHei", "宋体", Arial, Helvetica, sans-serif, Tahoma;
+}
+.main-item .item .item_r .over{
+  color: #ff841d;
+}
+.model{
+  width: 100%;
+  height:100%;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 999;
+  background: rgba(22, 22, 22, 0.88);
+  display: block;
+}
+.slider li{
+  width: 227px;
+  height: 156px;
+  position: relative;
+  overflow: hidden;
+}
+.slider li>img{
+  width: 227px;
+  height: 156px;
+}
+.model{
+  display: none;
+}
+.model .arrowBox{
+  width: 44px;
+  height: 68px;
+}
+.model .arrowBox .arrowRight,.model .arrowBox .arrowLeft{
+  width: 40px;
+  height: 50px;
+  line-height:50px;
+  text-align: center;
+  background: rgba(228, 228, 228, 0.62);
+
+}
+.model .arrowBox .arrowRight{
+  right:0;
+  position: absolute;
+  top: 50%;
+  transform:translate(-50%,-50%);
+  font-size: 26px;
+  color: #fffdef;
+
+}
+.model .arrowBox .arrowLeft{
+  left: 47px;
+  font-size: 26px;
+  color: #fffdef;
+}
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}

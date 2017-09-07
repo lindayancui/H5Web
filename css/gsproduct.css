@@ -1,0 +1,240 @@
+header{
+  width: 100%;
+  height: 50px;
+  background: #ff841d;
+  line-height:44px;
+  text-align: center;
+  position: relative;
+}
+header h2{
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  color: #fff;
+}
+.downLoad{
+  width: 36px;
+  height: 36px;
+  background: url("../images/header_app.png") no-repeat right center;
+  -webkit-background-size:contain;
+  background-size:contain;
+  padding-top:12px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+header .arrow{
+  width: 26px;
+  height: 28px;
+  background: url(../images/icback.svg) no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  left: 10px;
+  top: 12px;
+}
+
+.searchIcon{
+  width: 46px;
+  position: relative;
+  border-bottom: 1px solid #dadada;
+  text-align: center;
+  border-left: 1px solid #dadada;
+}
+.searchIcon i{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url("../images/search.svg") no-repeat;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  background-size: 22px 22px;
+  background-position: center center;
+}
+.mainList{
+
+}
+.mainList .hd{
+  position: relative;
+  height: 38px;
+  display: -webkit-box;
+  background: #fff;
+}
+.mainList .hd .filter{
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-flex: 1;
+  border-bottom: 1px solid #dadada;
+}
+.mainList .hd .filter ul li {
+  float: left;
+  width: 33%;
+  height: 30px;
+  line-height:35px;
+  display: -webkit-box !important;
+  display: box !important;
+  position: relative;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  box-sizing: border-box;
+}
+.mainList .hd .filter ul li a{
+  display: -webkit-box !important;
+  display: box !important;
+  position: relative;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  color: #000;
+}
+.mainList .hd .filter ul {
+  width: 100%;
+}
+.mainList .hd .filter ul li i{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  background: url("../images/down.png") no-repeat;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  background-size: 22px 22px;
+  background-position: center center;
+}
+.mainList .product{
+  margin:6px 0;
+}
+.mainList .product ul{
+  width: 98%;
+  margin:0 auto;
+}
+.mainList .product ul li{
+  float: left;
+  width: 50%;
+
+}
+.mainList .product ul li .lia{
+  display: block;
+  margin:4px;
+  background: #fff;
+}
+.mainList .product ul li .lia .m_t{
+  padding: 11px 0;
+}
+.mainList .product ul li  a .p_p{
+  color: #333333;
+  word-break: break-all;
+  padding: 0 6px;
+  height: 14px;
+  overflow: hidden;
+  font-size: 12px;
+  margin-top: 10px;
+  line-height: 14px;
+  font-weight: normal;
+  text-align: left;
+  margin-top: 6px;
+}
+.mainList .product ul li a .p_pic{
+  width: 100%;
+}
+.mainList .product ul li .p_btn{
+  display: inline-block;
+  float: right;
+  background: #ff841d;
+  padding: 3px 3px;
+  color: #fff;
+  border-radius: 3px;
+  margin-right: 12px;
+}
+
+.mainList .product ul li a .p_price{
+  color: #ff841d;
+  font-size: 16px;
+  float: left;
+}
+
+.popsort{
+  width: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0px;
+  top: 37px;
+  box-shadow: 0px 3px 6px #dddddd;
+}
+.popsort ul{}
+.popsort ul li{
+  border-bottom: 1px solid #dadada;
+  border-width: 0 0 1px 0;
+  height: 36px;
+  line-height:36px;
+  position: relative;
+}
+.mainList .popsort ul li a{
+  color: #000;
+  display: block;
+  font-size: 16px;
+  line-height:36px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.popsort2{
+  width: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0px;
+  top: 37px;
+  box-shadow: 0px 3px 6px #dddddd;
+}
+.popsort2 ul{}
+.popsort2 ul li{
+  border-bottom: 1px solid #dadada;
+  border-width: 0 0 1px 0;
+  height: 36px;
+  line-height:36px;
+  position: relative;
+}
+.mainList .popsort2 ul li a{
+  color: #000;
+  display: block;
+  font-size: 16px;
+  line-height:36px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.popsort3{
+  width: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0px;
+  top: 37px;
+  box-shadow: 0px 3px 6px #dddddd;
+}
+.popsort3 ul{}
+.popsort3 ul li{
+  border-bottom: 1px solid #dadada;
+  border-width: 0 0 1px 0;
+  height: 36px;
+  line-height:36px;
+  position: relative;
+}
+.mainList .popsort3 ul li a{
+  color: #000;
+  display: block;
+  font-size: 16px;
+  line-height:36px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
